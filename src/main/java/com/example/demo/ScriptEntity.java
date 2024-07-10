@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 @Entity
-@Table(name = "script", schema = "public", catalog = "demo")
+@Table(name = "script")
 public class ScriptEntity {
     private long id;
     private String cookieBannerTitle;
