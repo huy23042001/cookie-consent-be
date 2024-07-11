@@ -22,7 +22,6 @@ public class Controller {
 
     @PostMapping(value = "/consent")
     public ConsentEntity saveConsent(@RequestBody ConsentEntity consentEntity, HttpServletRequest request)  {
-        consentEntity.setIpClient(request.getRemoteAddr());
         consentEntity.setTimestamp(Instant.now());
         return consentRepository.save(consentEntity);
     }
